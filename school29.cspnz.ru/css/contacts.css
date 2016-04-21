@@ -1,0 +1,44 @@
+.contacts_page {
+	width: 605px;
+	background: #f3ede2;
+	min-height: 825px;
+	margin-top: 15px;
+	padding-left: 20px;
+}
+
+.contacts_page h1 {
+	color: #262f3a;
+	font-size: 30px;
+	padding: 12px 0;
+	width: 585px;
+	border-bottom: 1px solid #6a747c;
+}
+
+.contacts_page h3 {
+	color: #262f3a;
+	font-size: 18px;
+	padding: 12px 0;
+}
+
+.contacts_page p {
+	padding-left: 10px;
+	padding-bottom: 5px;
+	font-size: 18px;
+	color: #405b7b;
+}
+
+.contacts_page ul {
+	padding-left: 40px;
+}
+
+.contacts_page ul li {
+	list-style: none;
+	font-size: 14px;
+	color: #405b7b;
+	padding: 5px 0;
+}
+
+.footer {margin-top: 25px;}
+.right_cont {margin-top: 25px;}
+.photogallery {margin-top: -15px;}
+.best {margin-top: 25px;}

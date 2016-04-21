@@ -1,0 +1,32 @@
+.photogallery_page {
+	width: 585px;
+	background: #f3ede2;
+	min-height: 825px;
+	margin-top: 15px;
+	padding: 0 20px;
+}
+
+.photogallery_page h1 {
+	color: #262f3a;
+	font-size: 30px;
+	padding: 12px 0;
+	width: 585px;
+	border-bottom: 1px solid #6a747c;
+}
+
+.photogallery_page ul li {
+	list-style: none;
+	float: left;
+	padding-top: 15px;
+	padding-right: 15px;
+}
+
+.photo {
+	display: inline-block;
+	margin: 5px 5px;
+}
+
+.footer {margin-top: 25px;}
+.right_cont {margin-top: 25px;}
+.photogallery {margin-top: -15px;}
+.best {margin-top: 25px;}

@@ -1,0 +1,115 @@
+<html>
+<head>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
+	<title>Тайны нашего подсознания</title>
+	<link rel="stylesheet" href="./css/home.css">
+	<link rel="stylesheet" href="./css/photogallery.css">
+	<script src="./js/jquery-2.2.2.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	
+	<div class="container">
+		<div class="header">
+			<div class="nav">
+				<ul>
+					<li><a href="./index.html">Главная</a></li>
+					<li><a href="./articles.html">Статьи</a></li>
+					<li><a href="./photogallery.html">Фотогаллерея</a></li>
+					<li><a href="./contacts.html">Контакты</a></li>
+					
+				</ul>
+			</div>
+			<div class="search">
+				<form action="" onsubmit="javascript: FindOnPage('text-to-find'); return false;">
+					<input id="text-to-find" onfocus="$(this).animate({width:'186px'},200)" onblur="if($(this).val()=='') {$(this).animate({width:'1px'},200)}" class="searchinput" type="text" value="" maxlength="40" />
+				</form>
+			</div>
+		</div>
+
+		<div class="content">
+
+			<div class="photogallery_page">
+				
+				<h1>Фотогаллерея</h1>
+				
+				<br>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/dejavu_1.jpg"><img src="./article_img/dejavu_1.jpg" height="150px" alt="Дежавю"></a></div>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/dejavu_2.jpg"><img src="./article_img/dejavu_2.jpg" height="150px" alt="Дежавю"></a></div>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/dejavu_3.jpg"><img src="./article_img/dejavu_3.jpg" height="150px" alt="Дежавю"></a></div>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/dream_1.jpg"><img src="./article_img/dream_1.jpg" height="150px" alt="Сон"></a></div>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/dream_2.jpeg"><img src="./article_img/dream_2.jpeg" height="150px" alt="Сон"></a></div>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/dream_3.jpeg"><img src="./article_img/dream_3.jpeg" height="150px" alt="Сон"></a></div>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/nostalgia_1.jpg"><img src="./article_img/nostalgia_1.jpg" height="150px" alt="Ностальгия"></a></div>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/nostalgia_2.jpg"><img src="./article_img/nostalgia_2.jpg" height="150px" alt="Ностальгия"></a></div>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/nostalgia_3.jpg"><img src="./article_img/nostalgia_3.jpg" height="150px" alt="Ностальгия"></a></div>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/fear_1.jpg"><img src="./article_img/fear_1.jpg" height="150px" alt="Страх"></a></div>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/fear_2.jpg"><img src="./article_img/fear_2.jpg" height="150px" alt="Страх"></a></div>
+				<div class="photo"><a rel="simplebox_group" href="./article_img/fear_3.jpg"><img src="./article_img/fear_3.jpg" height="150px" alt="Страх"></a></div>
+
+			</div>
+
+		</div>
+
+		<div class="right_cont">
+			<div class="facts">
+				<h1>Краткие интересные факты</h1>
+				<script type="text/javascript" src="./js/random_facts.js"></script>
+			</div>
+			<div class="photogallery">
+				<a href="./photogallery.html"><img src="./img/photogall.png" alt="" class="photo_lup"><script src="./js/random_bg.js"></script></a>
+			</div>
+			<div class="best">
+				<h1>Лучшие статьи</h1>
+				<h3>Дежавю</h3>
+				<div class="best_krat_inf">
+					<p><a href="./article/dejavu.html">Сегодня мы расскажем вам об одном из самых загадочных явлений, которым 
+					порой поражает нас наш собственный 
+					мозг — так называемом эффекте 
+					дежавю.</a></p>
+				</div>
+				<h3>Сон с научной точки зрения</h3>
+				<div class="best_krat_inf">
+					<p><a href="./article/dream.html">Каждый из живущих на Земле человек задумывался, что такое сон и как он возникает в голове. Парадоксально, но сколько бы времени ученые не тратили на изучение данного явления, понять этот сложное явление до конца так никому и не удалось. Как растолковать собственный сон, определяет не книга, а сам человек.</a></p>
+				</div>
+				<h3>Психология страха</h3>
+				<div class="best_krat_inf">
+					<p><a href="./article/fear.html">Страх – это чувство, через которое в своей жизни неоднократно проходил каждый человек. Все люди, всех возрастов и национальностей, когда-либо испытывали страхи. Страх может убить, а может и спасти. Страх может помочь, а может и привести в отчаяние. Что такое страх с точки зрения психологии?</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<a href="" id="up"><img src="./img/page_up.png" alt=""></a>
+			<ul>
+				<li><a href="./index.html">Главная</a></li>
+				<li><a href="./articles.html">Статьи</a></li>
+				<li><a href="./photogallery.html">Фотогаллерея</a></li>
+				<li><a href="./contacts.html">Контакты</a></li>
+			</ul>
+			<br>
+			<p>© 2016 Сделан учащимися МБОУ ФЭЛ № 29: <a href="./contacts.html">Игошин Павел</a>, <a href="./contacts.html">Лысяков Илья</a></p>
+		</div>
+	</div>
+	
+	<script src="./js/script.js"></script>
+	<script src="./js/search.js"></script>
+	<script type="text/javascript" src="./js/simplebox_util.js"></script>
+	<script type="text/javascript">
+	(function(){
+	var boxes=[],els,i,l;
+	if(document.querySelectorAll){
+	els=document.querySelectorAll('a[rel=simplebox]');	
+	Box.getStyles('simplebox_css','./css/simplebox.css');
+	Box.getScripts('simplebox_js','./js/simplebox.js',function(){
+	simplebox.init();
+	for(i=0,l=els.length;i<l;++i)
+	simplebox.start(els[i]);
+	simplebox.start('a[rel=simplebox_group]');			
+	});
+	}
+	})();</script>
+</body>
+</html>

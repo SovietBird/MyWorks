@@ -1,0 +1,5 @@
+2
+paper
+rock
+rock
+scissors

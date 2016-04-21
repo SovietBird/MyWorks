@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\bird\documents\visual studio 2015\projects\codeforces\юфу 2016\f\f\source.cpp(24): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+c:\users\bird\documents\visual studio 2015\projects\codeforces\юфу 2016\f\f\source.cpp(30): warning C4477: "printf": в строке форматирования "%.9f" требуется аргумент типа "double", но вариативный аргумент "1" имеет тип "long"
+  F.vcxproj -> C:\Users\Bird\Documents\Visual Studio 2015\Projects\Codeforces\ЮФУ 2016\F\Debug\F.exe

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Тайны нашего подсознания</title>
+	<link rel="stylesheet" href="./css/home.css">
+	<link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<script src="./js/jquery-2.2.2.min.js"></script>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="header">
+			<div class="nav">
+				<ul>
+					<li><a href="./index.html">Главная</a></li>
+					<li><a href="./articles.html">Статьи</a></li>
+					<li><a href="./photogallery.html">Фотогаллерея</a></li>
+					<li><a href="./contacts.html">Контакты</a></li>
+					
+				</ul>
+			</div>
+			<div class="search">
+				<form action="#" onsubmit="FindOnPage('text-to-find'); return false;">
+					<input id="text-to-find" onfocus="$(this).animate({width:'186px'},200)" onblur="if($(this).val()=='') {$(this).animate({width:'1px'},200)}" class="searchinput" type="text" value="" maxlength="40" />
+				</form>
+			</div>
+		</div>
+		
+		<div class="carusel">
+			<div class="slider">
+				<ul>
+					<li><img src="./img/competition_logo.jpg" alt=""></li>
+					<li><img src="./article_img/dream_2.jpeg" alt="" width="650px" height="350px"></li>
+					<li><img src="./article_img/dejavu_3.jpg" alt="" width="650px" height="350px"></li>
+				</ul>
+			</div>
+			<div class="email">
+				<form class="form_email" action="#" id="formID" method="post" onsubmit="return checkForm(this);">
+					<h1>Подписаться на наши статьи</h1><br>
+					<label for="">
+						<h3>E-mail*</h3>
+						<input type="text" name="email" id="email" value="">
+					</label>
+					<label for="">
+						<h3>Имя*</h3>
+						<input type="text" name="name" id="name" value="">
+					</label>
+					<label for="">
+						<h3>Учебное заведение</h3>
+						<input type="text" name="school" id="school" value="">
+					</label>
+					<span>Поля, отмеченные * обязательны для заполнения</span>
+					<input class="submit" type="submit" value="Подписаться" />
+
+				</form>
+			</div>
+			<div class="info">
+				<h3>Ежегодный конкурс сайтов учащихся г. Пензы</h3>
+				<p>Авторы проекта, учащиеся МБОУ ФЭЛ № 29:<br> 
+				Игошин Павел Дмитриевич<br>
+				Лысяков Илья Дмитриевич	</p>
+				<p class="last_info">Руководитель:<br>
+				Бирюкова Анна Дмитриевна</p>
+			</div>
+			<div class="second_info">
+				<h3>Тема проекта: “Тайны нашего подсознания”</h3>
+				<p>В нашем проекте мы расскажем основные тайны<br> 
+				человеческого подсознания и попытаемся<br> объяснить
+				их.</p>
+				<p class="last_info">Дата разроботки: 2016 г.</p>
+
+			</div>
+			
+		</div>
+
+		<div class="content">
+			<div class="sub1">
+				<a href="./article/dejavu.html"><img src="./article_img/dejavu_1.jpg" alt=""></a>
+				<h1>Дежавю</h1>
+				<div class="parent">
+					<div class="art_krat_inf">	
+						<p>Сегодня мы расскажем вам об одном из самых загадочных явлений, которым 
+						порой поражает нас наш собственный 
+						мозг — так называемом эффекте 
+						дежавю.</p>
+					</div>
+				</div>
+				<p class="bot_line"></p>
+				<div class="article_date_home">
+					<span>Дата публикаций: 07.04.2016</span>
+				</div>
+				<div class="read_more">
+					<a href="./article/dejavu.html">Читать далее</a>
+				</div>
+			</div>
+
+			<div class="sub1 sub2">
+				<a href="./article/dream.html"><img src="./article_img/dream_1.jpg" alt=""></a>
+				<h1>Сон с научной точки зрения</h1>
+				<div class="parent">
+					<div class="art_krat_inf">	
+						<p>Каждый из живущих на Земле человек задумывался, что такое сон и как он возникает в голове. Парадоксально, но сколько бы времени ученые не тратили на изучение данного явления, понять этот сложное явление до конца так никому и не удалось. Как растолковать собственный сон, определяет не книга, а сам человек.</p>
+					</div>
+				</div>
+
+				<p class="bot_line"></p>
+				<div class="article_date_home">
+					<span>Дата публикаций: 07.04.2016</span>
+				</div>
+				<div class="read_more">
+					<a href="./article/dream.html">Читать далее</a>
+				</div>
+			</div>
+
+			<div class="sub1">
+				<a href="./article/nostalgia.html"><img src="./article_img/nostalgia_1.jpg" alt=""></a>
+				<h1>Что такое ностальгия?</h1>
+				<div class="parent">
+					<div class="art_krat_inf">	
+						<p>Каждый из живущих на Земле человек задумывался, что такое сон и как он возникает в голове. Парадоксально, но сколько бы времени ученые не тратили на изучение данного явления, понять этот сложное явление до конца так никому и не удалось. Как растолковать собственный сон, определяет не книга, а сам человек.</p>
+					</div>
+				</div>
+				<p class="bot_line"></p>
+				<div class="article_date_home">
+					<span>Дата публикаций: 07.04.2016</span>
+				</div>
+				<div class="read_more">
+					<a href="./article/nostalgia.html">Читать далее</a>
+				</div>
+			</div>
+
+			<div class="sub1 sub2">
+				<a href="./article/fear.html"><img src="./article_img/fear_1.jpg" alt=""></a>
+				<h1>Психология страха</h1>
+				<div class="parent">
+					<div class="art_krat_inf">	
+						<p>Страх – это чувство, через которое в своей жизни неоднократно проходил каждый человек. Все люди, всех возрастов и национальностей, когда-либо испытывали страхи. Страх может убить, а может и спасти. Страх может помочь, а может и привести в отчаяние. Что такое страх с точки зрения психологии?</p>
+					</div>
+				</div>
+				<p class="bot_line"></p>
+				<div class="article_date_home">
+					<span>Дата публикаций: 07.04.2016</span>
+				</div>
+				<div class="read_more">
+					<a href="./article/fear.html">Читать далее</a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="right_cont">
+			<div class="facts">
+				<h1>Краткие интересные факты</h1>
+				<script type="text/javascript" src="./js/random_facts.js"></script>
+			</div>
+			<div class="photogallery">
+				<a href="./photogallery.html"><img src="./img/photogall.png" alt="" class="photo_lup"><script src="./js/random_bg.js"></script></a>
+			</div>
+			<div class="best">
+				<h1>Лучшие статьи</h1>
+				<h3>Дежавю</h3>
+				<div class="best_krat_inf">
+					<p><a href="./article/dejavu.html">Сегодня мы расскажем вам об одном из самых загадочных явлений, которым 
+					порой поражает нас наш собственный 
+					мозг — так называемом эффекте 
+					дежавю.</a></p>
+				</div>
+				<h3>Сон с научной точки зрения</h3>
+				<div class="best_krat_inf">
+					<p><a href="./article/dream.html">Каждый из живущих на Земле человек задумывался, что такое сон и как он возникает в голове. Парадоксально, но сколько бы времени ученые не тратили на изучение данного явления, понять этот сложное явление до конца так никому и не удалось. Как растолковать собственный сон, определяет не книга, а сам человек.</a></p>
+				</div>
+				<h3>Психология страха</h3>
+				<div class="best_krat_inf">
+					<p><a href="./article/fear.html">Страх – это чувство, через которое в своей жизни неоднократно проходил каждый человек. Все люди, всех возрастов и национальностей, когда-либо испытывали страхи. Страх может убить, а может и спасти. Страх может помочь, а может и привести в отчаяние. Что такое страх с точки зрения психологии?</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<a href="" id="up"><img src="./img/page_up.png" alt=""></a>
+			<ul>
+				<li><a href="./index.html">Главная</a></li>
+				<li><a href="./articles.html">Статьи</a></li>
+				<li><a href="./photogallery.html">Фотогаллерея</a></li>
+				<li><a href="./contacts.html">Контакты</a></li>
+			</ul>
+			<br>
+			<p>© 2016 Сделан учащимися МБОУ ФЭЛ № 29: <a href="./contacts.html">Игошин Павел</a>, <a href="./contacts.html">Лысяков Илья</a></p>
+		</div>
+	</div>
+	
+	<script src="./js/script.js"></script>
+	<script src="./js/search.js"></script>
+	<script src="./js/sub.js"></script>
+</body>
+</html>
