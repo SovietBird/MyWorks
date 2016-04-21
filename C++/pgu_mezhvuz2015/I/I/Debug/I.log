@@ -1,0 +1,6 @@
+﻿  Source.cpp
+d:\works\c++\pgu_mezhvuz2015\i\i\source.cpp(14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+d:\works\c++\pgu_mezhvuz2015\i\i\source.cpp(17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note:  см. объявление "fscanf"
+  I.vcxproj -> D:\Works\C++\pgu_mezhvuz2015\I\Debug\I.exe
