@@ -1,0 +1,5 @@
+﻿  Source.cpp
+d:\works\c++\software_cup_2014\f\f\source.cpp(42): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+d:\works\c++\software_cup_2014\f\f\source.cpp(53): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+d:\works\c++\software_cup_2014\f\f\source.cpp(76): warning C4101: keys: неиспользованная локальная переменная
+  F.vcxproj -> D:\Works\C++\software_cup_2014\F\Debug\F.exe

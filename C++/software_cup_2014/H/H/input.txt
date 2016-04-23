@@ -1,0 +1,13 @@
+12
+abac 1 100
+baca 2 120
+caba 1 110
+bacc 2 90
+cabac 3 180
+bucac 3 190
+cucab 2 200
+ucbab 1 150
+bubca 3 210
+cuabc 2 120
+abcuc 3 180
+bcuac 3 210
