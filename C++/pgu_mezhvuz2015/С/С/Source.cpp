@@ -1,61 +1,75 @@
 #include <stdio.h>
 #include <iostream>
 #include <vector>
+#include <fstream>
+#include <algorithm>
 
 using namespace std;
 
-int main() {
+ifstream fin("input.txt");
+ofstream fout("output.txt");
 
-	int N, M, k = 0;
+void Dijkstra(vector< vector<int> > &gr, int st, int n) {
 
-	FILE *fp = fopen("input.txt", "r");
-	FILE *fc = fopen("output.txt", "w");
+	int  count, index, i, u, m = st + 1;
+	vector<long> distance(n, LONG_MAX);
+	vector<bool> visited(n, false);
+	int max_distance = -5;
 
-	fscanf(fp, "%d%d", &N, &M);
+	distance[st] = 0;
 
-	vector< vector<int> > arr(N);
-	vector<int> ans;
+	vector<long> ans;
 
-	for (int i = 0; i < N; ++i) {
-		vector<int> a(N);
-		arr[i] = a;
-	}
+	for (count = 0; count < n - 1; count++) {
 
-	for (int i = 0; i < M; ++i) {
-		int x, y;
+		int min = LONG_MAX;
 
-		fscanf(fp, "%d%d", &x, &y);
+		for (i = 0; i < n; i++)
+			if (!visited[i] && distance[i] <= min) {
+				min = distance[i];
+				index = i;
+			}
+		u = index;
+		visited[u] = true;
 
-		++arr[x - 1][y - 1];
-	}
-
-	for (int i = 0; i < N; ++i) {
-		for (int j = 0; j < N; ++j) {
-
-			if (arr[i][j] == 1) {
-				++k;
-				ans.push_back(j + 1);
+		for (i = 0; i < n; i++)
+			if ((!visited[i] && gr[u][i] && distance[u] != LONG_MAX) && (distance[u] + gr[u][i] < distance[i])) {
+				distance[i] = distance[u] + gr[u][i];
+				if (distance[i] > max_distance)
+					max_distance = distance[i];
+				ans.push_back(i + 1);
 			}
 
-		}
 	}
 
-	cout << "  1 2 3 4 5" << endl;
-
-	for (int i = 0; i < N; ++i) {
-		cout << i + 1 << ' ';
-		for (int j = 0; j < N; ++j) {
-			cout << arr[i][j] << ' ';
-		}
-		cout << endl;
-	}
-
-	cout << k << endl;
+	fout << max_distance << endl;
 
 	for (int i = 0; i < ans.size(); ++i)
-		cout << ans[i] << ' ';
+		fout << ans[i] << ' ';
+}
 
-	system("pause");
+int main() {
+
+	int n, m;
+
+	fin >> n >> m;
+
+	int s = 0;
+
+	vector< vector<int> > g(n);
+	vector<int> a(n);
+	
+	for (int i = 0; i < n; ++i) {
+		g[i] = a;
+	}
+
+	for (int i = 0; i < m; ++i) {
+		int v, u;
+		fin >> v >> u;
+		g[v - 1][u - 1] = 1;
+	}
+
+	Dijkstra(g, 0, n);
 
 	return 0;
 }
